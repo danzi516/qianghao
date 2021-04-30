@@ -1,0 +1,37 @@
+
+<view class='centreWrap'>
+  <view class='centreTopName'>
+    <view class="userinfo">
+      <view class="userinfo-avatar">
+        <open-data  type="userAvatarUrl"></open-data>
+      </view>
+      <view class="userinfo-text">
+        <open-data type="userNickName"></open-data>
+      </view>
+    </view>
+  </view>
+  <view class='messageCase'>
+        <view class='messageWrap' bindtap='DynamicState'>
+          <text class='messageTop'></text>
+          <text>{{sumTotal}}</text>
+        </view>
+        <image class='halving-line' src=''></image>
+        <view class='messageWrap' catchtap='enshrineClick'>
+          <text class='messageTop'></text>
+          <text>{{collectTotal}}</text>
+        </view>
+        <image class='halving-line' src=''></image>
+        <view class='messageWrap' catchtap='myMineMoney'>
+          <text class='messageTop'></text>
+          <text><text wx:if="{{accountBalance.data !=0}}"></text>{{accountBalance.data}}</text>
+        </view>
+  </view>
+  <view class='time'>{{time}}</view>
+<view class='bgd'>
+
+  <view class='number' bindtap="{{buttonClicked?'addData':''}}">
+    <view style='padding-top:37%'> <text class='test111'>{{showData}}</text></view>
+   
+  </view>
+</view>
+</view>
